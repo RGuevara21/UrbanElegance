@@ -1,27 +1,3 @@
-import React from "react";
-import "./App.css";
-import SignInLogo from "./images/sign-in-background.jpg";
-
-// Sign Up anchor tag component
-
-import Hyperlinks from "./user-authentication/sign_in/LinkToSignUp";
-
-//
-
-const SignInBackground = () => {
-  return (
-    <>
-      <div className="image-background">
-        <img
-          src={SignInLogo}
-          alt="Sign In Background"
-          className="sign-in-background"
-        />
-      </div>
-    </>
-  );
-};
-
 const SignInForm = () => {
   const mainHeading = "Sign In to UrbanElegance";
   const mainDescription =
@@ -69,38 +45,4 @@ const SignInForm = () => {
   );
 };
 
-const SignInFooter = () => {
-  const footerHeading = "Sign In to your account with: ";
-
-  return (
-    <>
-      <footer className="main-page-footer">
-        <div className="left-side-heading">
-          <h3 className="footer-heading">{footerHeading}</h3>
-
-          <button className="facebook">Facebook {/* Facebook Icon */}</button>
-          <button className="instagram">
-            Instagram {/* Instagram Icon */}
-          </button>
-          <button className="google">Google {/* Google Icon */}</button>
-        </div>
-      </footer>
-    </>
-  );
-};
-const App = () => {
-  return (
-    <main className="main-page">
-      <section>
-        <SignInBackground />
-      </section>
-      <section>
-        <Hyperlinks />
-        <SignInForm />
-        <SignInFooter />
-      </section>
-    </main>
-  );
-};
-
-export default App;
+export default SignInForm;
