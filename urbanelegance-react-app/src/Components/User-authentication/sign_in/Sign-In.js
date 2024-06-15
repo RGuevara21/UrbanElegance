@@ -17,7 +17,7 @@ import SignInFooter from "./Footer";
 
 /* ------------------------------------------------------------------------ */
 
-// Main Function
+// Sign-In Function
 
 const Sign_In = () => {
   return (
