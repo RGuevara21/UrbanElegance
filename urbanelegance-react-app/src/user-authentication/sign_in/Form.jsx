@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 const SignInForm = () => {
   const mainHeading = "Sign In to UrbanElegance";
   const mainDescription =
     "Fill out the fields in order to sign in to UrbanElegance store.";
+
+  const [name, setName] = useState("Ralph");
+
+  const handleClick = (Name, e) => {
+    alert("Hey wassup mother fucking " + Name + " you clicked me!");
+  };
 
   return (
     <>
@@ -35,7 +43,13 @@ const SignInForm = () => {
           </div>
 
           <div className="form-action-button">
-            <button type="submit" className="sign-in-button">
+            <button
+              type="submit"
+              onClick={(e) => {
+                handleClick(name, e.target);
+              }}
+              className="sign-in-button"
+            >
               Sign In
             </button>
           </div>
