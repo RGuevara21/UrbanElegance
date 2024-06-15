@@ -1,37 +1,16 @@
 import React from "react";
-import "./App.css";
 
 /* ------------------------------------------------------------------------ */
 
-// Sign In Header Component
-import Header from "./user-authentication/sign_in/Header";
-
-// Sign In Form Component
-import SignInForm from "./user-authentication/sign_in/Form";
-
-// Sign In Background Component
-import SignInBackground from "./user-authentication/sign_in/FormBackground";
-
-// Sign In Footer Component
-import SignInFooter from "./user-authentication/sign_in/Footer";
+// Sign In Component
+import Sign_In from "./Components/User-authentication/sign_in/Sign-In";
 
 /* ------------------------------------------------------------------------ */
 
 // Main Function
 
 const App = () => {
-  return (
-    <main className="main-page">
-      <section>
-        <SignInBackground />
-      </section>
-      <section>
-        <Header />
-        <SignInForm />
-        <SignInFooter />
-      </section>
-    </main>
-  );
+  return <Sign_In />;
 };
 
 export default App;

@@ -1,4 +1,4 @@
-import SignInLogo from "./page-background/sign-in.jpg";
+import SignInLogo from "../../Assets/user-auth-backgrounds/sign-in.jpg";
 
 const SignInBackground = () => {
   return (
